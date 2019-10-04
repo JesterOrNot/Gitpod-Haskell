@@ -9,3 +9,6 @@ ports:
 tasks:
 - init: echo 'init script' # runs during prebuild
   command: echo 'start script'
+vscode:
+  extensions:
+    - alanz.vscode-hie-server@0.0.28:j/YAJtXUGGbb8xSSz1i/CQ==
