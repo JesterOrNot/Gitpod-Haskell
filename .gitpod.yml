@@ -12,3 +12,4 @@ tasks:
 vscode:
   extensions:
     - alanz.vscode-hie-server@0.0.28:j/YAJtXUGGbb8xSSz1i/CQ==
+    - justusadam.language-haskell@2.6.0:CvYnp3YmQPTuto0m1di+1A==
