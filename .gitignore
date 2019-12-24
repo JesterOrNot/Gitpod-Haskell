@@ -1,2 +1,7 @@
 *.hi
 *.o
+hash
+bubbleSort
+calc
+fib
+cli
