@@ -1,7 +1,10 @@
-fib :: Int -> Int -- define funtion as taking one integer and returning one integer
-fib 0 = 0 -- return 0 if input is 0
-fib 1 = 1 -- reutrn 1 if input is 1
-fib n = fib (n-1) + fib (n-2) -- else compute fibonacci and return it
+fib :: Int -> Integer
+main :: IO ()
+
+fib = (map fibs [0 ..] !!)
+   where fibs 0 = 0
+         fibs 1 = 1
+         fibs n = fib (n-2) + fib (n-1)
 
 main = do
-    putStrLn (show(fib 6)) -- compute the 6th fibonacci number
+    putStrLn(show(fib 10000))
