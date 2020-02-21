@@ -21,8 +21,7 @@ quadMain = do
     let b = read b1 :: Float
     let c = read c1 :: Float
     let awnsers = quad(a,b,c)
-    putStrLn ("X1 = " ++ (show (awnsers !! 0)))
-    putStrLn ("X2 = " ++ (show (awnsers !! 1)))
+    putStrLn "X1 = " ++ show (head awnsers)
+    putStrLn ("X2 = " ++ show (awnsers !! 1))
 
-main = do
-    quadMain
+main = quadMain
