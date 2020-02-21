@@ -1,9 +1,7 @@
 FROM gitpod/workspace-full:latest
 USER gitpod
-# Install ghc, cabal, stack, and hlint with brew
-RUN brew install \
-    ghc \
-    cabal-install \
-    haskell-stack \
-    hlint
+RUN sudo add-apt-repository -y ppa:hvr/ghc && \
+    sudo apt-get update && \
+    sudo apt-get install -y cabal-install ghc
+RUN brew install haskell-stack hlint
 ENV PATH=/home/gitpod/.local/bin:$PATH
