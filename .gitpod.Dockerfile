@@ -1,4 +1,4 @@
-FROM sourcegraph/haskell-ide-engine
+FROM dogwith1eye/haskell-ide-engine
 # USER gitpod
 # RUN sudo add-apt-repository -y ppa:hvr/ghc && \
 #     sudo apt-get update && \
