@@ -1,7 +1,10 @@
 FROM gitpod/workspace-full:latest
 USER gitpod
-RUN sudo add-apt-repository -y ppa:hvr/ghc && \
-    sudo apt-get update && \
-    sudo apt-get install -y cabal-install ghc
-RUN brew install haskell-stack hlint
+RUN brew install haskell-stack
+RUN stack install brittany hlint
+RUN git clone https://github.com/haskell/haskell-ide-engine --recurse-submodules \
+    && cd haskell-ide-engine  \
+    && stack install haskell-ide-engine \
+    && cd .. \
+    && rm -rf haskell-ide-engine
 ENV PATH=/home/gitpod/.local/bin:$PATH
