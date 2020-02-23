@@ -1,7 +1,7 @@
-image: sourcegraph/haskell-ide-engine
-#   file: sourcegraph/haskell-ide-engine
-# tasks:
-#   - init: cabal update && cabal install unordered-containers
+image:
+  file: sourcegraph/haskell-ide-engine
+tasks:
+  - init: cabal update && cabal install unordered-containers
 
 vscode:
   extensions:
