@@ -1,5 +1,5 @@
 image:
-  file: sourcegraph/haskell-ide-engine
+  file: .gitpod.Dockerfile
 tasks:
   - init: cabal update && cabal install unordered-containers
 
